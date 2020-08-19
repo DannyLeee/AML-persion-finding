@@ -10,6 +10,14 @@ This is a part of competition using news to find possible (or used to) money lau
     * So, use the [ckiptrigger](https://github.com/ckiplab/ckiptagger) to find person name in these spans.[2]
     * But ckiptrigger sometime get wrong names, use QA-base model check ckip output's name is or not the target person.[3]
 
+# Usage
+* All `.py` files are generated from `.ipynb` files
+* `AML`: the main code of this repo
+* `AML_package`: BIO model inference package
+* `AML_name_embedding`: add additional embedding before input into BERT
+* Folder `ckip`: the result of name classifier from dataset 0~3
+* **Notice: This repository codes can not totally execute because some models(QA-base) are loss.**
+
 # Acknowledgments
 Thank [@Leo Lin](https://github.com/CoyoteLeo) build web crawler and arrange training set, inference ckiptrigger[2] and integrate team members' code into API; [@HongYun0901
 ](https://github.com/HongYun0901) build the QA-base model for the final model[3]; [@Mouthhan](https://github.com/Mouthhan) and [@Edward Wu](https://github.com/Marzear) build the binary classifier to predict have or not target person[1].
@@ -20,7 +28,3 @@ Finally, our team found only use QA-base input news and ckiptrigger output's can
 
 # Dataset, Pretrained Model and Colab
 The dataset, pretrain model, final model and colab notebook of this repository can be download from [here](https://drive.google.com/drive/folders/1r5kAb6NY0LXU2ldLjWm7V4i8p74xLani?usp=sharing)
-
----
-
-**Notice: This repository python file and notebook can not totally execute because some models(QA-base) are loss.**
